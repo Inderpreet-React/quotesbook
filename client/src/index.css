@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  [type="text"],
+  [type="password"],
+  [type="email"],
+  [type="number"],
+  [type="url"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="week"],
+  [type="time"],
+  [type="search"],
+  [type="tel"],
+  [multiple],
+  textarea,
+  select {
+    @apply w-full rounded border-gray-400 focus:border-indigo-500;
+  }
+  [type="checkbox"],
+  [type="radio"] {
+    @apply h-5 w-5 rounded border-gray-400 text-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+  }
+}
+
+@layer utilities {
+  .SearchBar {
+    height: 2rem;
+  }
+}
